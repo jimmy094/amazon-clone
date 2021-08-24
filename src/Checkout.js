@@ -5,13 +5,15 @@ import Subtotal from './Subtotal'
 import CheckoutProduct from './CheckoutProduct'
 
 function Checkout() {
-const [{ basket}, dispatch] = useStateValue(); 
+const [{ basket, user}, dispatch] = useStateValue(); 
 
     return (
         <div className="checkout">
             <div className="checkout__left">
                 <img className="checkout__ad" src="https://m.media-amazon.com/images/G/01/AdProductsWebsite/images/AUX/ILB_BrightColors_NotApproved._TTW_.jpg" alt="" />  
                 <div>
+
+                    <h3>Hello, {user?.email}</h3>
                     <h2 className="checkout__title">
                         Your shopping cart
                     </h2>
