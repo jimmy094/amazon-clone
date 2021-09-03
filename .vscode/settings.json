@@ -1,3 +1,10 @@
 {
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "emmet.excludeLanguages": [
+
+
+        "markdown"
+    ],
+    "emmet.triggerExpansionOnTab": true,
+    "editor.minimap.enabled": false
 }
